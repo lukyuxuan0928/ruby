@@ -1,0 +1,2 @@
+Luke, 24, 0, Malaysia, Chinese, B140031C, CS12B, CS, SUC
+SW, 23, 0, Malaysia, C, B1230D, SJ, SJI, SUC
