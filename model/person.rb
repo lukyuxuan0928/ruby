@@ -7,7 +7,7 @@ class Person
     def initialize(name, age, gender, country, region)
         @name=name
         @age=age
-        
+        # check gender
         if gender == 1 then
             @gender=Gender::Male
         else

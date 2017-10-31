@@ -2,8 +2,10 @@ $LOAD_PATH << '.'
 require_relative 'model/student'
 require 'file'
 
+# create
 def create_student()
     begin
+        # Keep asking require data
         print 'Name: '
         name = gets.to_s.chomp # without next line
         print 'Age: '
@@ -25,8 +27,9 @@ def create_student()
 
         # create an instance
         student = Student.new(name, age, gender, country, region, student_id, batch, course, school)
+        # initial database
         db = Database.new()
-
+        # save to db
         db.saveToFile(student)
     rescue Exception => e
         puts e.message
@@ -36,8 +39,9 @@ end
 
 def read_students()
     begin
+        # initial database
         db = Database.new
-
+        # read data from db
         db.readToFile().each do |student|
             puts student.story()
         end
