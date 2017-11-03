@@ -79,5 +79,5 @@ Create a database class that centralize all the db control in order to maintain 
 Please take note that might minor changes of syntax on different version
 
 ```
-    ruby == 2.31
+    ruby == 2.3.1
 ```
